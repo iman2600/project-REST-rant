@@ -3,18 +3,18 @@ const router = require("express").Router();
 router.get("/", (req, res) => {
   let places = [
     {
-      name: "H-Thai-ML",
-      city: "Seattle",
-      state: "WA",
-      cuisines: "Thai, Pan-Asian",
-      pic: "http://placekitten.com/250/250",
+      name: "Generic Pizza Place",
+      city: "Millcreek",
+      state: "UT",
+      cuisines: "Pizza, Wings",
+      pic: "/images/fernando-andrade-_P76trHTWDE-unsplash.jpg",
     },
     {
-      name: "Coding Cat Cafe",
+      name: "Generic Cafe",
       city: "Phoenix",
       state: "AZ",
       cuisines: "Coffee, Bakery",
-      pic: "http://placekitten.com/250/250",
+      pic: "images/nathan-dumlao-z3em1GBRhvY-unsplash.jpg",
     },
   ];
 
