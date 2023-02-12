@@ -4,14 +4,17 @@ const app = express();
 
 app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
+app.use(express.static("public"));
 
+//controllers and routes
 app.use("/places", require("./controllers/places"));
 
+//Home route
 app.get("/", (req, res) => {
   res.render("home");
 });
 
-//keep at bottom
+//404 route (keep at bottom)
 app.get("*", (req, res) => {
   res.render("error404");
 });
