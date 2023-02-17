@@ -44,3 +44,16 @@ main {
   margin-left: 20px;
   background-color: white;
 }
+#placeInfo {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+}
+
+h2 {
+  color: brown;
+}
+
+#comments {
+  border-top: 1px solid #bbbbbb;
+}
